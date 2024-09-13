@@ -1,0 +1,148 @@
+/* Styl globalny */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0; /* Jasnoszare tło */
+    color: #333; /* Ciemny tekst */
+    line-height: 1.6;
+    font-size: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Układ w kolumnie (z góry na dół) */
+    align-items: center;     /* Wyśrodkowanie w poziomie */
+    height: auto;           /* Wysokość dynamiczna w zależności od zawartości */
+}
+
+/* Styl dla divów */
+div {
+    padding: 20px;
+    margin: 10px 0; /* Margines pionowy */
+    background-color: #e0e0e0; /* Jasnoszare tło dla divów */
+    border: 1px solid #b0b0b0; /* Ciemniejsza szarość dla obramowania */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lekkie cienie */
+    width: 90%;
+    max-width: 1200px;
+    color: #333; /* Ciemny tekst dla kontrastu */
+}
+
+/* Styl dla przycisków */
+button {
+    padding: 10px 20px;
+    background-color: #444; /* Ciemnoszary kolor */
+    color: #fff; /* Biały tekst */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lekkie cienie */
+}
+
+button:hover {
+    background-color: #333; /* Jeszcze ciemniejsza szarość na hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Dodanie cienia na hover */
+}
+
+/* Styl dla przycisków typu "secondary" */
+button.secondary {
+    padding: 10px 20px;
+    background-color: #666; /* Jasnoszary kolor dla secondary */
+    color: #fff;
+    border: 1px solid #444; /* Ciemnoszare obramowanie */
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lekkie cienie */
+}
+
+button.secondary:hover {
+    background-color: #555; /* Ciemniejszy szary na hover */
+    color: #fff;
+}
+
+/* Styl dla pól input */
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa; /* Bardzo jasnoszare tło */
+    transition: border 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lekkie cienie */
+}
+
+input:focus, textarea:focus {
+    border-color: #888; /* Szara ramka po aktywacji */
+    outline: none;
+}
+
+/* Styl nagłówków i tekstów */
+h1, h2, h3, h4, h5, h6 {
+    color: #333; /* Ciemnoszare nagłówki */
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+/* Styl dla linków */
+a {
+    color: #333; /* Ciemny szary dla linków */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #555; /* Jaśniejszy szary kolor na hover */
+}
+
+/* Styl dla tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #e0e0e0;
+    font-weight: bold;
+    color: #333;
+}
+
+table tr:nth-child(even) {
+    background-color: #f0f0f0; /* Naprzemienne bardzo jasnoszare tło dla wierszy */
+}
+
+/* Styl dla formularzy */
+form {
+    background-color: #e0e0e0;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styl dla sekcji */
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}

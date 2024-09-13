@@ -1,0 +1,148 @@
+/* Styl globalny */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    background: #f3e5f5; /* Jednolity jasnofioletowy kolor tła */
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Układ w kolumnie (z góry na dół) */
+    align-items: center;     /* Wyśrodkowanie w poziomie */
+    height: auto;           /* Wysokość dynamiczna w zależności od zawartości */
+}
+
+/* Styl dla divów */
+div {
+    padding: 20px;
+    margin: 10px 0; /* Margines pionowy zamiast poziomego */
+    background-color: #d1a3d1; /* Fioletowawe tło dla divów */
+    border: 1px solid #b385b3; /* Trochę ciemniejszy fiolet dla obramowania */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lekkie cienie */
+    width: 90%;
+    max-width: 1200px; /* Ogranicza szerokość divów */
+    color: #fff; /* Biały tekst dla kontrastu na fioletowym tle */
+}
+
+/* Styl dla przycisków */
+button {
+    padding: 10px 20px;
+    background-color: #b97cb7; /* Przyciemniony jasnofioletowy kolor */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lekkie cienie */
+}
+
+button:hover {
+    background-color: #a05f9d; /* Ciemniejszy fiolet na hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Dodanie cienia na hover */
+}
+
+/* Styl dla przycisków typu "secondary" */
+button.secondary {
+    padding: 10px 20px;
+    background-color: #e3d6e3; /* Jasno fioletowy kolor */
+    color: #5c2f5c; /* Ciemniejszy fiolet dla tekstu */
+    border: 1px solid #b97cb7; /* Ciemnofioletowe obramowanie */
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lekkie cienie */
+}
+
+button.secondary:hover {
+    background-color: #d8a0f0; /* Jasnofioletowy kolor tła na hover */
+    color: #fff; /* Biały kolor tekstu na hover */
+}
+
+/* Styl dla pól input */
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+    transition: border 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lekkie cienie */
+}
+
+input:focus, textarea:focus {
+    border-color: #d8a0f0; /* Jasnofioletowy kolor ramki po aktywacji */
+    outline: none;
+}
+
+/* Styl nagłówków i tekstów */
+h1, h2, h3, h4, h5, h6 {
+    color: #fff; /* Biały kolor nagłówków na fioletowym tle */
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+/* Styl dla linków */
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e0bce0; /* Jaśniejszy fioletowy kolor na hover */
+}
+
+/* Styl dla tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #d1a3d1;
+    font-weight: bold;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #c8a2c8; /* Naprzemienne fioletowe tło dla wierszy */
+}
+
+/* Styl dla formularzy */
+form {
+    background-color: #d1a3d1;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styl dla sekcji */
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    background-color: #d1a3d1;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
